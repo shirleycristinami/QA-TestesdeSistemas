@@ -11,15 +11,15 @@ public class Calculadora {
 		resultado = num1 + num2;
 	}
 
-	public int subtrair(int num1, int num2) {
+	public void subtrair(int num1, int num2) {
 		resultado = num1 - num2;;
 	}
 
-	public int multiplicar(int num1, int num2) {
+	public void multiplicar(int num1, int num2) {
 		resultado = num1 * num2;
 	}
 
-	public int dividir(int num1, int num2) {
+	public void dividir(int num1, int num2) {
 		resultado = num1 / num2;
 	}
 }
