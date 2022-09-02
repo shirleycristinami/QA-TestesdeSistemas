@@ -35,6 +35,20 @@ public class CalculadoraTest {
 	}
 	
 	@Test
+	public void testaDividirCorretaParaDoisInteirosPositivoscomerro() {
+		Calculadora calculadora =new Calculadora();
+		
+		int entradaNumero1 = 10;
+		int entradaNumero2 = 5;
+		
+		int resultadoEsperado = -1;
+		calculadora.dividir(entradaNumero1, entradaNumero2);
+		int resultadoObtido = calculadora.getResultado();
+		
+		Assertions.assertEquals(resultadoEsperado, resultadoObtido);
+	}
+	
+	@Test
 	public void testaMultiplicarCorretaParaDoisInteirosPositivos() {
 		Calculadora calculadora =new Calculadora();
 		
