@@ -1,12 +1,25 @@
 package org.iftm.entities;
 
-public class Funcionario {
+public class FuncionarioTerceirizado {
 	private String nome;
 	private int horas;
 	private double valor;
 	private int horasTrabalhadas;
+	private double despesasAdicionais;
 
-	public Funcionario(String nome, int horas, double valor) {
+	public double getDespesasAdicionais() {
+		return despesasAdicionais;
+	}
+
+	public void setDespesasAdicionais(double despesasAdicionais) {
+		this.despesasAdicionais = despesasAdicionais;
+	}
+
+	public int getHorasTrabalhadas() {
+		return horasTrabalhadas;
+	}
+
+	public FuncionarioTerceirizado(String nome, int horas, double valor) {
 		super();
 		this.nome = nome;
 		this.horas = horas;
@@ -43,9 +56,6 @@ public class Funcionario {
 		}
 		this.horasTrabalhadas = horasTrabalhadas;
 		}
-
-	public int getHorasTrabalhadas() {
-		return horasTrabalhadas;
-	}
 	
+
 }
