@@ -4,16 +4,17 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class FuncionarioTest {
-	public void testarconstrutorComDadosValidos() {
-		
+	
 		@Test
-		public void testarConstrutorAlunoComDadosValidosEAlunoAprovado() {
+		public void testarConstrutorFuncionarioComDadosValido(){
 			//cenário de teste
 			String nomeValido = "Laiane Angelina Ribeiro";
-			double horasValida = 6.0; //quantidade de horas semanal
-			int valorValida = 75; //valor da hora trabalhada
-			double salarioEsperado = 1800,00;
-			Funcionario a; 
+			int horasValido = 6; //quantidade de horas semanal
+			double valorValido = 75; //valor da hora trabalhada
+			double salarioEsperado = 1800;
+			Funcionario a = new Funcionario(nomeValido,horasValido,valorValido); //este é o construtor
+			
+			Assertions.assertEquals(null, null);
 	}
 	
 }
