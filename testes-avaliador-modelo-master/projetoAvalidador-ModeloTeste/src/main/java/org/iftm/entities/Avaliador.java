@@ -22,7 +22,7 @@ public class Avaliador {
 			if (lance.getValor() < menorDeTodos) {
 				menorDeTodos = lance.getValor();
 
-			}
+			} 
 		}
 
 		pegaOsMaioresNo(leilao);
