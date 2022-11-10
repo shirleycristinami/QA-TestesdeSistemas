@@ -14,7 +14,16 @@ public class FuncionarioTest {
 			double salarioEsperado = 1800;
 			Funcionario a = new Funcionario(nomeValido,horasValido,valorValido); //este é o construtor
 			
-			Assertions.assertEquals(null, null);
+			int horasObtidas = a.getHorasTrabalhadas(); 
+			String nomeObtido = a.getNome();
+			double valorObtido = a.getValor();
+			double salarioFinal = a.calculaSalario();
+			
+			
+			Assertions.assertEquals(horasValido, horasObtidas);
+			Assertions.assertEquals(nomeValido,nomeObtido);
+			Assertions.assertEquals(salarioEsperado, salarioFinal);
+			
 	}
 	
 }
